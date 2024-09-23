@@ -16,7 +16,7 @@ import { PubSub } from 'graphql-subscriptions';
       path: '/v1/api-graphql',
       cors: {
         credentials: true,
-        origin: ['http://192.168.20.74:3000'],
+        origin: ['http://192.168.20.74:3000', 'https://ppcd.edl.com.la'],
         // origin: ['http://localhost:3000'],
       },
     }),

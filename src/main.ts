@@ -17,6 +17,7 @@ async function bootstrap() {
       // 'http://150.95.30.174:4041',
       'http://192.168.20.74:3000',
       // 'http://localhost:3000',
+      'https://ppcd.edl.com.la',
       'https://studio.apollographql.com',
     ],
   });
