@@ -2,10 +2,10 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { HttpExceptionFilter } from './core/filters/http.filter';
 import { ValidationPipe } from '@nestjs/common';
-import { IpDev, IpProd } from './shares/ipAddress';
+//import { IpDev } from './shares/ipAddress';
 
 async function bootstrap() {
-  const ip = process.env.IP === 'prod' ? IpProd : IpDev;
+  //const ip = process.env.IP === 'prod' ? IpProd : IpDev;
 
   // console.log(ip);
 
@@ -16,7 +16,7 @@ async function bootstrap() {
     origin: [
       // 'http://150.95.30.174:4041',
       'http://192.168.20.74:3000',
-      // 'http://localhost:3000',
+      'http://localhost:3000',
       'https://ppcd.edl.com.la',
       'https://studio.apollographql.com',
     ],
